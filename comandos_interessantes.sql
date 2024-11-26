@@ -27,7 +27,8 @@ alter table disciplinas change cod_curso cod_curso tinyint;
 -- Esse comando muda apenas o tipo do dado, não sendo possivel mudar o nome da coluna
 alter table disciplinas modify cod_curso smallint;
 
+-- Esse comando vai alterar o nome da tabela 
+rename table disciplinas to materias;
 
-
-
-
+-- Esse comando vai derrubar uma tabela dentro do banco caso ela já exista
+drop table if exists disciplinas;
